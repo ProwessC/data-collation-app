@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/directions_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:entries="@array/directions"
+        />
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<include layout="@layout/view_select_lanes"/>-->
+            <!--<include layout="@layout/view_select_lanes"/>-->
+            <!--<include layout="@layout/view_select_lanes"/>-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lanes_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

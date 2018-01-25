@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/lane_selected_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/lane_number_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/lane_selected_checkbox"
+        android:text="Lane 1"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/lane_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/lane_number_textview"
+        android:text="(EXPRESS)"
+        android:layout_marginStart="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/lane_reversible_indicator_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/background_collect_data"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_toStartOf="@+id/lane_count_percent_textview"
+        android:src="@drawable/ic_swap_vert_black_24dp"/>
+
+    <TextView
+        android:id="@+id/lane_count_percent_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="3%" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#cacaca" />
+
+</RelativeLayout>

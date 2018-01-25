@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@drawable/background_collect_data"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lane_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lane 1"
+            android:textColor="#4a4a4a" />
+
+        <TextView
+            android:id="@+id/lane_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="EXPRESS"
+            android:textColor="#4a4a4a"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="70dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/lane_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="24"
+            android:textColor="#4a4a4a" />
+    </LinearLayout>
+
+</RelativeLayout>
